@@ -1,7 +1,7 @@
 /* @MEDIA DEL FONDO DE PANTALLA */
 @media only screen and (min-width: 1595px) and (max-width: 1716px) {
     .fondo-index {
-      background-image: url("../../imagenes/fondoproyecto.jpg");
+      background-image: url("../imagenes/fondoproyecto.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 70% 40%;
@@ -9,7 +9,7 @@
   }
   @media only screen and (min-width: 1722px) {
     .fondo-index {
-      background-image: url(/images/Fondoproyecto.jpg);
+      background-image: url("../imagenes/fondoproyecto.jpg");
       background-repeat: no-repeat;
       background-position: 0px 0px;
       background-size: cover;
@@ -18,7 +18,7 @@
   }
   @media only screen and (min-width: 2px) and (max-width: 1009px) {
     .fondo-index {
-      background-image: url(/images/fondo5.jpg);
+      background-image: url("../imagenes/fondo5.jpg");
       background-size: cover;
     }
   }
