@@ -1,817 +1,850 @@
-/*Reset Valores*/
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Fuzzy Bubbles';
+/*Reset de valores*/
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Trispace:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Fuzzy Bubbles";
 }
-/*GOOGLE FONTS*/
-
-@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
-/*Inicio de index*/
 
 .fondo-index {
-    background-image: url("../imagenes/fondoproyecto.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-     background-size: cover;
-
-}
- /* @MEDIA DEL FONDO DE PANTALLA */
-@media only screen and (min-width: 1595px)  and (max-width: 1716px) {
-
-    .fondo-index {
-        background-image: url(/images/Fondoproyecto.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 70%  40%;
-    }
-}
-
-@media only screen and (min-width: 1722px) {
-    .fondo-index{
-
-        background-image: url(/images/Fondoproyecto.jpg);
-        background-repeat: no-repeat;
-        background-position: 0px 0px;
-        background-size: cover;
-        background-position: 70%  30%;
-    }
-}
-@media only screen and (min-width:2px) and (max-width:1009px) {
-    .fondo-index{
-      background-image: url(/images/fondo5.jpg);
-      background-size: cover;
-
-    }
+  background-image: url("../images/fondoproyecto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /*Header - Menu*/
-
 .color-nav {
-    background-color: #ABD9FF;
-    border-radius: 15px;
+  background-color: #ABD9FF;
+  border-radius: 15px;
 }
 
 .animacion-header:hover {
-    transform: scale(1.2);
-    transition: all 1s;
+  transform: scale(1.2);
+  transition: all 1s;
 }
 
 /* Fin header */
+/* @MEDIA DEL FONDO DE PANTALLA */
+@media only screen and (min-width: 1595px) and (max-width: 1716px) {
+  .fondo-index {
+    background-image: url("../../imagenes/fondoproyecto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 40%;
+  }
+}
+@media only screen and (min-width: 1722px) {
+  .fondo-index {
+    background-image: url(/images/Fondoproyecto.jpg);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    background-size: cover;
+    background-position: 70% 30%;
+  }
+}
+@media only screen and (min-width: 2px) and (max-width: 1009px) {
+  .fondo-index {
+    background-image: url(/images/fondo5.jpg);
+    background-size: cover;
+  }
+}
+/* Main / Section / Div */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 25%);
+  grid-template-rows: repeat(5, 150px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
+.div1 {
+  grid-area: 1/1/2/2;
+}
 
- /* Main / Section / Div */
+.div2 {
+  grid-area: 1/2/2/3;
+}
 
- .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 25%);
-    grid-template-rows: repeat(5, 150px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+.div3 {
+  grid-area: 1/3/2/4;
+}
 
-    .div1 {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-    .div2 {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-    .div3 {
-        grid-area: 1 / 3 / 2 / 4;
-    }
-    .div4 {
-        grid-area: 1 / 4 / 2 / 5;
-    }
-    .div5 {
-        grid-area: 2 / 1 / 3 / 2;
-    }
-    .div6 {
-        grid-area: 2 / 2 / 3 / 3;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFF6BF;
-        font-size: 8rem;
-    }
-    .div7 {
-        grid-area: 2 / 3 / 3 / 4;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFF6BF;
-        font-size: 8rem;
-    }
+.div4 {
+  grid-area: 1/4/2/5;
+}
 
-    .div6,
-    .div7 {
-        animation: movimiento 3s ease-in-out infinite;
-    }
-    @keyframes movimiento {
-        0%{
-            transform: translate(-20%, 0);
-            opacity: 50%;
-        }
-        25%{
-            transform: translate(-10%, 0);
-            opacity: 60%;
+.div5 {
+  grid-area: 2/1/3/2;
+}
 
-        }
-        50%{
-            text-shadow: 0 25px 50px rgba(255, 235, 173, 1);
-            transform: translate(1%, 0);
-            opacity: 70%;
-        }
-        75%{
-            transform: translate(-5%, 0);
-            opacity: 80%;
-        }
-        90%{
-            transform: translate(-10%, 0);
-            opacity: 90%;
-        }
-        100%{
-            transform: translate(-20%, 0);
-            opacity: 50%;
-        }
-     }
-    .div8 {
-        grid-area: 2 / 4 / 3 / 5;
-    }
-    .div9 {
-        grid-area: 3 / 1 / 4 / 2;
-    }
-    .div10 {
-        grid-area: 3 / 2 / 4 / 3;
-    }
-    .div11 {
-        grid-area: 3 / 3 / 4 / 4;
-    }
-    .div12 {
-        grid-area: 3 / 4 / 4 / 5;
-    }
-    .div13 {
-        grid-area: 4 / 1 / 5 / 2;
-    }
-    .div14 {
-        grid-area: 4 / 2 / 5 / 3;
-    }
-    .div15 {
-        grid-area: 4 / 3 / 5 / 4;
-    }
-    .div16 {
-         grid-area: 4 / 4 / 5 / 5;
-    }
+.div6 {
+  grid-area: 2/2/3/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF6BF;
+  font-size: 8rem;
+}
 
-    /* @MEDIA DEL TITULO CON ANIMACION */
+.div7 {
+  grid-area: 2/3/3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF6BF;
+  font-size: 8rem;
+}
+
+.div6,
+.div7 {
+  animation: movimiento 3s ease-in-out infinite;
+}
+
+@keyframes movimiento {
+  0% {
+    transform: translate(-20%, 0);
+    opacity: 50%;
+  }
+  25% {
+    transform: translate(-10%, 0);
+    opacity: 60%;
+  }
+  50% {
+    text-shadow: 0 25px 50px rgb(255, 235, 173);
+    transform: translate(1%, 0);
+    opacity: 70%;
+  }
+  75% {
+    transform: translate(-5%, 0);
+    opacity: 80%;
+  }
+  90% {
+    transform: translate(-10%, 0);
+    opacity: 90%;
+  }
+  100% {
+    transform: translate(-20%, 0);
+    opacity: 50%;
+  }
+}
+.div8 {
+  grid-area: 2/4/3/5;
+}
+
+.div9 {
+  grid-area: 3/1/4/2;
+}
+
+.div10 {
+  grid-area: 3/2/4/3;
+}
+
+.div11 {
+  grid-area: 3/3/4/4;
+}
+
+.div12 {
+  grid-area: 3/4/4/5;
+}
+
+.div13 {
+  grid-area: 4/1/5/2;
+}
+
+.div14 {
+  grid-area: 4/2/5/3;
+}
+
+.div15 {
+  grid-area: 4/3/5/4;
+}
+
+.div16 {
+  grid-area: 4/4/5/5;
+}
+
+/* @MEDIA DEL TITULO CON ANIMACION */
 @media only screen and (min-width: 1128px) and (max-width: 1800px) {
-        .div6,
-        .div7 {
-        font-size: 4rem;
-        }
-    }
+  .div6,
+  .div7 {
+    font-size: 4rem;
+  }
+}
 @media only screen and (min-width: 894px) and (max-width: 1127px) {
-            .div6,
-            .div7 {
-            font-size: 2rem;
-            }
-         }
-@media only screen and (min-width: 456px) and (max-width:893px) {
-
-.div6,
-.div7 {
+  .div6,
+  .div7 {
     font-size: 2rem;
+  }
 }
- }
- @media only screen and (min-width: 228px) and (max-width:455px) {
-
-.div6,
-.div7 {
+@media only screen and (min-width: 456px) and (max-width: 893px) {
+  .div6,
+  .div7 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 228px) and (max-width: 455px) {
+  .div6,
+  .div7 {
     font-size: 1rem;
-    }
- }
- @media only screen and (min-width: 100px) and (max-width:227px) {
-.div6,
-.div7 {
-    font-size: 0.5rem;
- }
+  }
 }
-
+@media only screen and (min-width: 100px) and (max-width: 227px) {
+  .div6,
+  .div7 {
+    font-size: 0.5rem;
+  }
+}
 /* Fin de main */
 /* Inicio de footer */
-
 .index-footer-contenedor {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr) 80%;
-    grid-template-rows: repeat(5, 30px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 80%;
+  grid-template-rows: repeat(5, 30px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-    .index-footer-1 {
-         grid-area: 1 / 1 / 2 / 2;
-        }
-    .index-footer-2 {
-         grid-area: 1 / 2 / 2 / 3;
-        }
-    .index-footer-3 {
-        grid-area: 1 / 3 / 2 / 4;
-    }
-    .index-footer-4 {
-         grid-area: 1 / 4 / 2 / 5;
-        }
-    .index-footer-5 {
-         grid-area: 1 / 5 / 2 / 6;
-         }
-    .index-footer-6 {
-        grid-area: 1 / 5 / 2 / 6;
-    }
+.index-footer-1 {
+  grid-area: 1/1/2/2;
+}
+
+.index-footer-2 {
+  grid-area: 1/2/2/3;
+}
+
+.index-footer-3 {
+  grid-area: 1/3/2/4;
+}
+
+.index-footer-4 {
+  grid-area: 1/4/2/5;
+}
+
+.index-footer-5 {
+  grid-area: 1/5/2/6;
+}
+
+.index-footer-6 {
+  grid-area: 1/5/2/6;
+}
 
 .container-footer1 {
-    display: grid;
-    grid-template-columns: repeat(30, 1fr);
-    grid-template-rows: 1fr;
-    line-height: 4;
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: 1fr;
+  line-height: 4;
 }
 
 .redes-footer {
-    width: 35px;
+  width: 35px;
 }
 
 /* Fin Footer*/
-
-/* ----------------------------------------FIN INDEX--------------------------------------- */
-/* COMIENZO RECITALES */
-/* Fondo */
-
-.fondo-recitales{
-    background-image: url(/images/fondorecitales4.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
+/*Inicio Recitales*/
+/*Fondo recitales*/
+.fondo-recitales {
+  background-image: url("../../imagenes/fondorecitales4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-/* Header */
-
+/*Inicio header*/
 .color-header-recitales {
-    background-color: #F0447A;
-    border-radius: 15px;
+  background-color: #F0447A;
+  border-radius: 15px;
 }
 
-/* Fin Header */
+/*Fin Header*/
 /* Comienzo Main */
-
 .estetica-imagen {
-    border-radius: 15px;
-    border: 2px solid #18BCD1;
+  border-radius: 15px;
+  border: 2px solid #18BCD1;
 }
 
-@media only screen and (min-width: 0px) and (max-width:810px) {
-    .estetica-imagen {
-        width: 0px;
-    }
-}
 .carta-tecnopolis {
-    background-color: #18BCD1;
+  background-color: #18BCD1;
 }
 
 .carta-cordoba {
-    background-color: #DED6D1;
+  background-color: #DED6D1;
 }
+
 .carta-mendoza {
-    background-color: #FBAE1A;
+  background-color: #FBAE1A;
 }
 
 .fuente-carta {
-    font-family: 'Trispace', sans-serif;
-    color: #DED6D1;
-}
-.fuente-carta1 {
-    font-family: 'Trispace', sans-serif;
-    color: #18BCD1;
-}
-.fuente-carta2 {
-    font-family: 'Trispace', sans-serif;
+  font-family: "Trispace", sans-serif;
+  color: #DED6D1;
 }
 
+.fuente-carta1 {
+  font-family: "Trispace", sans-serif;
+  color: #18BCD1;
+}
+
+.fuente-carta2 {
+  font-family: "Trispace", sans-serif;
+}
 
 /* Fin Main */
-
-/* ------------------------------------------FIN RECITALES----------------------------------------------------- */
-/* Inicio Discografia */
-
-.fondo-discografia {
-    background-image: url(/images/fondodiscografia.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-     background-size: cover;
+@media only screen and (min-width: 0px) and (max-width: 810px) {
+  .estetica-imagen {
+    width: 0px;
+  }
 }
+/*discografia fondo*/
+.fondo-discografia {
+  background-image: url(../images/fondodiscografia.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /* Inicio header Discografia */
 .color-header-discografia {
-    background-color: #D7CCC9;
-    border-radius: 15px;
+  background-color: #D7CCC9;
+  border-radius: 15px;
 }
+
 /* Fin header Discografia */
-
 /* Inicio main Discografia */
-
-
 .uceecdunmestetica {
-    color: #EDBD5B;
-    background-color: #C52C69;
-    font-family: 'Bebas Neue', cursive;
+  color: #EDBD5B;
+  background-color: #C52C69;
+  font-family: "Bebas Neue", cursive;
 }
+
 .convosestetica {
-    color: #C7C7C7;
-    background-color: #131313;
-    font-family: 'Bebas Neue', cursive;
+  color: #C7C7C7;
+  background-color: #131313;
+  font-family: "Bebas Neue", cursive;
 }
+
 .cumbiaremixestetica {
-    color: #EBB99B;
-    background-color: #0F3237;
-    font-family: 'Bebas Neue', cursive;
+  color: #EBB99B;
+  background-color: #0F3237;
+  font-family: "Bebas Neue", cursive;
 }
+
 .yernosperfectosestetica {
-    color: #BE9167;
-    background-color: #812728;
-    font-family: 'Bebas Neue', cursive;
+  color: #BE9167;
+  background-color: #812728;
+  font-family: "Bebas Neue", cursive;
 }
 
 .cumbiaestetica {
-    color: #E48054;
-    background-color: #372E22;
-    font-family: 'Bebas Neue', cursive;
+  color: #E48054;
+  background-color: #372E22;
+  font-family: "Bebas Neue", cursive;
 }
+
 .yqueestetica {
-    color: #E8B21F;
-    background-color: #D73A65;
-    font-family: 'Bebas Neue', cursive;
+  color: #E8B21F;
+  background-color: #D73A65;
+  font-family: "Bebas Neue", cursive;
 }
+
 .saberperderestetica {
-    color: #A13349;
-    background-color: #13A087;
-    font-family: 'Bebas Neue', cursive;
+  color: #A13349;
+  background-color: #13A087;
+  font-family: "Bebas Neue", cursive;
 }
+
 .tualegriaaflordepielestetica {
-    color: #F8C758;
-    background-color: #513A3A;
-    font-family: 'Bebas Neue', cursive;
+  color: #F8C758;
+  background-color: #513A3A;
+  font-family: "Bebas Neue", cursive;
 }
+
 .caligarissinfonicoestetica {
-    color: #EDA765;
-    background-color: #112933;
-    font-family: 'Bebas Neue', cursive;
+  color: #EDA765;
+  background-color: #112933;
+  font-family: "Bebas Neue", cursive;
 }
+
 .vivirasiesmorirdeamorestetica {
-    color: #F1BC55;
-    background-color: #0D405B;
-    font-family: 'Bebas Neue', cursive;
+  color: #F1BC55;
+  background-color: #0D405B;
+  font-family: "Bebas Neue", cursive;
 }
+
 .mojarritaacusticoestetica {
-    color: #D4E4C0;
-    background-color: #D44806;
-    font-family: 'Bebas Neue', cursive;
+  color: #D4E4C0;
+  background-color: #D44806;
+  font-family: "Bebas Neue", cursive;
 }
+
 .unratodeamoracusticoestetica {
-    color: #32CDBA;
-    background-color: #D44806;
-    font-family: 'Bebas Neue', cursive;
+  color: #32CDBA;
+  background-color: #D44806;
+  font-family: "Bebas Neue", cursive;
 }
+
 .laabundanciaestetica {
-    color: #2F3A3C;
-    background-color: #54C8A5;
-    font-family: 'Bebas Neue', cursive;
+  color: #2F3A3C;
+  background-color: #54C8A5;
+  font-family: "Bebas Neue", cursive;
 }
+
 .salvaestetica {
-    color: #DF7742;
-    background-color: #161D21;
-    font-family: 'Bebas Neue', cursive;
+  color: #DF7742;
+  background-color: #161D21;
+  font-family: "Bebas Neue", cursive;
 }
+
 .quenoquedenhuellaestetica {
-    color: #F0DAC6;
-    background-color: #BB2D26;
-    font-family: 'Bebas Neue', cursive;
+  color: #F0DAC6;
+  background-color: #BB2D26;
+  font-family: "Bebas Neue", cursive;
 }
+
 .voyavolverestetica {
-    color: #574E6D;
-    background-color: #E5A6D1;
-    font-family: 'Bebas Neue', cursive;
+  color: #574E6D;
+  background-color: #E5A6D1;
+  font-family: "Bebas Neue", cursive;
 }
+
 .quedaenestanocheestetica {
-    color: #DBB848;
-    background-color: #1A1914;
-    font-family: 'Bebas Neue', cursive;
+  color: #DBB848;
+  background-color: #1A1914;
+  font-family: "Bebas Neue", cursive;
 }
+
 .florentinoyferminasestetica {
-    color: #6571B3;
-    background-color: #E4A682;
-    font-family: 'Bebas Neue', cursive;
+  color: #6571B3;
+  background-color: #E4A682;
+  font-family: "Bebas Neue", cursive;
 }
+
 .veinteestetica {
-    color: #759985;
-    background-color: #211612;
-    font-family: 'Bebas Neue', cursive;
+  color: #759985;
+  background-color: #211612;
+  font-family: "Bebas Neue", cursive;
 }
+
 .noestasestetica {
-    color: #D69890;
-    background-color: #2A1F20;
-    font-family: 'Bebas Neue', cursive;
+  color: #D69890;
+  background-color: #2A1F20;
+  font-family: "Bebas Neue", cursive;
 }
+
 .latempestadestetica {
-    color: #383A59;
-    background-color: #79A161;
-    font-family: 'Bebas Neue', cursive;
+  color: #383A59;
+  background-color: #79A161;
+  font-family: "Bebas Neue", cursive;
 }
+
 .cadavezestetica {
-    color: #D69890;
-    background-color: #2A1E1F;
-    font-family: 'Bebas Neue', cursive;
+  color: #D69890;
+  background-color: #2A1E1F;
+  font-family: "Bebas Neue", cursive;
 }
+
 .razonestetica {
-    color: #44A1A1;
-    background-color: #2B1E20;
-    font-family: 'Bebas Neue', cursive;
+  color: #44A1A1;
+  background-color: #2B1E20;
+  font-family: "Bebas Neue", cursive;
 }
+
 .cancionesfelicesestetica {
-    color: #F48023;
-    background-color: #EAE9E8;
-    font-family: 'Bebas Neue', cursive;
+  color: #F48023;
+  background-color: #EAE9E8;
+  font-family: "Bebas Neue", cursive;
 }
+
 .somostodosvivosestetica {
-    color: #0F0D10;
-    background-color: #CD906A;
-    font-family: 'Bebas Neue', cursive;
+  color: #0F0D10;
+  background-color: #CD906A;
+  font-family: "Bebas Neue", cursive;
 }
+
 .malifetaestetica {
-    color: #55828F;
-    background-color:#E0DEDE;
-    font-family: 'Bebas Neue', cursive;
+  color: #55828F;
+  background-color: #E0DEDE;
+  font-family: "Bebas Neue", cursive;
 }
+
 .quecorranestetica {
-    color: #B84D09;
-    background-color:#E0DEDE;
-    font-family: 'Bebas Neue', cursive;
+  color: #B84D09;
+  background-color: #E0DEDE;
+  font-family: "Bebas Neue", cursive;
 }
+
 .circologiaestetica {
-    color: #301816;
-    background-color:#AD583C;
-    font-family: 'Bebas Neue', cursive;
+  color: #301816;
+  background-color: #AD583C;
+  font-family: "Bebas Neue", cursive;
 }
+
 .todoslocosestetica {
-    color: #1F1212;
-    background-color:#07A090;
-    font-family: 'Bebas Neue', cursive;
+  color: #1F1212;
+  background-color: #07A090;
+  font-family: "Bebas Neue", cursive;
 }
+
 .cancionesparaarmarestetica {
-    color: #3B2413;
-    background-color:#379C8E;
-    font-family: 'Bebas Neue', cursive;
+  color: #3B2413;
+  background-color: #379C8E;
+  font-family: "Bebas Neue", cursive;
 }
+
 .bailarinapocalipticoestetica {
-    color: #C73A30;
-    background-color:#DBB55A;
-    font-family: 'Bebas Neue', cursive;
+  color: #C73A30;
+  background-color: #DBB55A;
+  font-family: "Bebas Neue", cursive;
 }
+
 .transpirandoalegriaestetica {
-    color: #110F0C;
-    background-color:#CAA180;
-    font-family: 'Bebas Neue', cursive;
+  color: #110F0C;
+  background-color: #CAA180;
+  font-family: "Bebas Neue", cursive;
 }
+
 .noesloquepareceestetica {
-    color: #FA9C2D;
-    background-color:#883B20;
-    font-family: 'Bebas Neue', cursive;
+  color: #FA9C2D;
+  background-color: #883B20;
+  font-family: "Bebas Neue", cursive;
 }
+
 .canchosamigosestetica {
-    color: #3E492B;
-    background-color:#EBA1AB;
-    font-family: 'Bebas Neue', cursive;
+  color: #3E492B;
+  background-color: #EBA1AB;
+  font-family: "Bebas Neue", cursive;
 }
+
 .grasastotalesestetica {
-    color: #150B12;
-    background-color:#A03E33;
-    font-family: 'Bebas Neue', cursive;
+  color: #150B12;
+  background-color: #A03E33;
+  font-family: "Bebas Neue", cursive;
 }
+
 .aniejowestetica {
-    color: #103ECC;
-    background-color:#E08D76;
-    font-family: 'Bebas Neue', cursive;
+  color: #103ECC;
+  background-color: #E08D76;
+  font-family: "Bebas Neue", cursive;
 }
 
 /* Fin main discografia */
-
-/*----------------------------------- Fin  Discografia -----------------------------*/
-
-/* INICIO HEADER / DISCOGRAFIA / ALBUMES */
-
-.fondoalbumsenc{
-    background-image: url(/images/fondoalbumsencillo.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-     background-size: cover;
+/* INICIO HEADER / DISCOGRAFIA / ALBUMES / SENCILLOS */
+.fondoalbumsenc {
+  background-image: url(/images/fondoalbumsencillo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-/* Fin header / discografia / albumes */
-
-/* --------------------------------------------Fin Discografia / Albumes & Sencillos --------------------------------------*/
 
 /* Inicio archivos con tapa musical & iframe */
-
 .fondotapa {
-    background-image: url(/images/fondoiframe2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-     background-size: cover;
+  background-image: url(/images/fondoiframe2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
 }
-/* Inicio Header */
 
+/* Inicio Header */
 .color-nav-iframe {
-    background-color:#1C1714;
-    border-radius: 15px;
+  background-color: #1C1714;
+  border-radius: 15px;
 }
 
 /* Fin Header */
-
+/*Titulo tapa musical*/
 .fuentetitulo {
-    color: #1C8642;
-    font-family: 'Akaya Telivigala', cursive;
-    border-radius: 15px;
+  color: #1C8642;
+  font-family: "Akaya Telivigala", cursive;
+  border-radius: 15px;
 }
 
-/*---------------------------------------------- Fin archivos con tapa musical & iframe ------------------------------*/
-
-/* INICIO HISTORIA */
+/* Fondo historia */
 .fondo-historia {
-    background-image: url(/images/fondo11.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: 100% 100%;
+  background-image: url(/images/fondo11.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 100% 100%;
 }
 
 /* INICIO  Header / Historia */
-
 .color-header-historia {
-    background-color: #BC8851;
-    border-radius: 15px;
+  background-color: #BC8851;
+  border-radius: 15px;
 }
 
-
 /* FIN Header / Historia */
-
 /* Inicio Main / Historia */
-
 /* Section 1 */
 .section1-main-historia {
-    font-size: 30px;
-    color: #BC8851;
-    font-style: italic;
+  font-size: 30px;
+  color: #BC8851;
+  font-style: italic;
 }
 
 /* Section 2 */
-
 .section2-main-historia {
-    font-size: 27px;
-    color: #BC8851;
-    font-style: italic;
+  font-size: 27px;
+  color: #BC8851;
+  font-style: italic;
 }
 
 .carrousel-main-historia {
-    border-radius: 15px;
-    border: 2px solid #68645C;
+  border-radius: 15px;
+  border: 2px solid #68645C;
 }
 
 .margen-carrousel {
-    margin: 62px 5px;
+  margin: 62px 5px;
 }
 
-.p1::selection{
-    background-color: #BC8851;
-    color: #68645C;
+.p1::selection {
+  background-color: #BC8851;
+  color: #68645C;
 }
 
 /* Fin / Main / Historia */
+/*contacto fondo */
+.fondo-contacto {
+  background-image: url(/images/fondo9.jpg);
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
 
-/* ---------------------FIN HISTORIA ----------------------*/
-
-/* Comienzo CONTACTO */
 /* Inicio Header */
-
-   .color-header-contacto {
-    background-color: #E07C29;
-    border-radius: 15px;
-   }
+.color-header-contacto {
+  background-color: #E07C29;
+  border-radius: 15px;
+}
 
 /* Fin Header */
-/* fondo */
-
-.fondo-contacto {
-    background-image: url(/images/fondo9.jpg);
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: 100% 100%;
-}
 /* Inicio Main */
-
 .parent-main-contacto {
-    display: grid;
-    grid-template-columns: repeat(2, 25%) 1fr repeat(2, 25%) ;
-    grid-template-rows: repeat(5, 130px);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+  display: grid;
+  grid-template-columns: repeat(2, 25%) 1fr repeat(2, 25%);
+  grid-template-rows: repeat(5, 130px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-    .div1-contacto { grid-area: 1 / 1 / 4 / 2; }
-    .div2-contacto { grid-area: 1 / 2 / 2 / 3; }
-    .div3-contacto {
-        grid-area: 1 / 2 / 4 / 5;
-        margin: 0% 30%;
-    }
-    .div4-contacto {
-        grid-area: 2 / 2 / 3 / 5;
-        margin: 5% 30%;
-    }
-    @media only screen and (max-width:560px) and (min-width:100px) {
-        .div3-contacto {
-            margin: 10% 10%;
-        }
+.div1-contacto {
+  grid-area: 1/1/4/2;
+}
 
-        .div4-contacto {
-          margin: 30% 10%;
-    }
-    }
-    .div6-contacto { grid-area: 1/ 5 / 5 / 6; }
+.div2-contacto {
+  grid-area: 1/2/2/3;
+}
+
+.div3-contacto {
+  grid-area: 1/2/4/5;
+  margin: 0% 30%;
+}
+
+.div4-contacto {
+  grid-area: 2/2/3/5;
+  margin: 5% 30%;
+}
+
+.div6-contacto {
+  grid-area: 1/5/5/6;
+}
 
 .letraformulario {
-    font-size: 20px;
-    color:azure;
-    border-radius: 10px;
+  font-size: 20px;
+  color: azure;
+  border-radius: 10px;
 }
+
 .fondo-formulario {
-    background-color: #EDA765;
+  background-color: #EDA765;
 }
+
 /* MOVIMIENTO TAPA1 IZQUIERDA PANTALLA COMPLETA */
 .z-tapa1 {
-    animation: mover 5s ease-in-out infinite;
+  animation: mover 5s ease-in-out infinite;
 }
-    @keyframes mover {
-        0% {
-            transform: translate(50%, 25%);
-            opacity: 50%;
 
-        }
-        25% {
-            transform: translate(50%, 30%);
-            opacity: 60%;
-
-        }
-        50% {
-            transform: translate(50%, 40%);
-            opacity: 70%;
-
-        }
-        75% {
-            transform: translate(50%, 25%);
-            opacity: 80%;
-
-        }
-        90% {
-            transform: translate(50%, 25%);
-            opacity: 90%;
-
-        }
-        100% {
-            transform: translate(50%, 25%);
-            opacity: 50%;
-
-        }
+@keyframes mover {
+  0% {
+    transform: translate(50%, 25%);
+    opacity: 50%;
+  }
+  25% {
+    transform: translate(50%, 30%);
+    opacity: 60%;
+  }
+  50% {
+    transform: translate(50%, 40%);
+    opacity: 70%;
+  }
+  75% {
+    transform: translate(50%, 25%);
+    opacity: 80%;
+  }
+  90% {
+    transform: translate(50%, 25%);
+    opacity: 90%;
+  }
+  100% {
+    transform: translate(50%, 25%);
+    opacity: 50%;
+  }
+}
+/* FIN DE Main */
+@media only screen and (max-width: 560px) and (min-width: 100px) {
+  .div3-contacto {
+    margin: 10% 10%;
+  }
+  .div4-contacto {
+    margin: 30% 10%;
+  }
 }
 /* MOVIMIENTO TAPA1 IZQUIERDA MENOS DE 1653 PX */
-@media only screen and (max-width:1653px) and (min-width:1020px) {
-    .z-tapa1,
-    .z-tapa2{
-        width: 300px;
+@media only screen and (max-width: 1653px) and (min-width: 1020px) {
+  .z-tapa1,
+  .z-tapa2 {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 1019px) and (min-width: 984px) {
+  .z-tapa1,
+  .z-tapa2 {
+    width: 200px;
+    animation: movertapa1 5s ease-in-out infinite;
+  }
+  @keyframes movertapa1 {
+    0% {
+      transform: translate(75%, 60%);
+      opacity: 50%;
     }
-}
-@media only screen and (max-width:1019px) and (min-width:984px) {
-    .z-tapa1,
-    .z-tapa2 {
-        width: 200px;
-        animation: movertapa1 5s ease-in-out infinite;
+    25% {
+      transform: translate(75%, 65%);
+      opacity: 60%;
     }
-    @keyframes movertapa1 {
-        0% {
-            transform: translate(75%, 60%);
-            opacity: 50%;
-        }
-        25% {
-            transform: translate(75%, 65%);
-            opacity: 60%;
-        }
-        50% {
-            transform: translate(75%, 70%);
-            opacity: 70%;
-        }
-        75% {
-            transform: translate(75%, 65%);
-            opacity: 80%;
-        }
-        90% {
-            transform: translate(75%, 60%);
-            opacity: 90%;
-        }
-        100% {
-            transform: translate(75%, 55%);
-            opacity: 50%;
-        }
+    50% {
+      transform: translate(75%, 70%);
+      opacity: 70%;
     }
+    75% {
+      transform: translate(75%, 65%);
+      opacity: 80%;
+    }
+    90% {
+      transform: translate(75%, 60%);
+      opacity: 90%;
+    }
+    100% {
+      transform: translate(75%, 55%);
+      opacity: 50%;
+    }
+  }
 }
-@media only screen and (max-width:983px) and (min-width:700px) {
-    .z-tapa1,
-    .z-tapa2 {
-        width: 200px;
+@media only screen and (max-width: 983px) and (min-width: 700px) {
+  .z-tapa1,
+  .z-tapa2 {
+    width: 200px;
+  }
 }
+@media only screen and (max-width: 699px) and (min-width: 560px) {
+  .z-tapa1,
+  .z-tapa2 {
+    width: 100px;
+  }
 }
-@media only screen and (max-width:699px) and (min-width:560px) {
-    .z-tapa1,
-    .z-tapa2 {
-        width: 100px;
-}
-}
-@media only screen and (max-width:559px) and (min-width:0px) {
-    .z-tapa1,
-    .z-tapa2 {
-        width: 0px;
-}
+@media only screen and (max-width: 559px) and (min-width: 0px) {
+  .z-tapa1,
+  .z-tapa2 {
+    width: 0px;
+  }
 }
 /* MOVIMIENTO TAPA2 DERECHA PANTALLA COMPLETA */
-
 .z-tapa2 {
-    animation: movimiento 5s ease-in-out infinite;
-    }
-    @keyframes movimiento {
-        0% {
-            transform: translate(-55%, 25%);
-            opacity: 50%;
-        }
-        25% {
-            transform: translate(-55%, 30%);
-            opacity: 60%;
-        }
-        50% {
-            transform: translate(-55%, 40%);
-            opacity: 70%;
-        }
-        75% {
-            transform: translate(-55%, 25%);
-            opacity: 80%;
-        }
-        90% {
-            transform: translate(-55%, 25%);
-            opacity: 90%;
-        }
-        100% {
-            transform: translate(-55%, 25%);
-            opacity: 50%;
-        }
-     }
-/* FIN DE Main */
+  animation: movimiento 5s ease-in-out infinite;
+}
 
+@keyframes movimiento {
+  0% {
+    transform: translate(-55%, 25%);
+    opacity: 50%;
+  }
+  25% {
+    transform: translate(-55%, 30%);
+    opacity: 60%;
+  }
+  50% {
+    transform: translate(-55%, 40%);
+    opacity: 70%;
+  }
+  75% {
+    transform: translate(-55%, 25%);
+    opacity: 80%;
+  }
+  90% {
+    transform: translate(-55%, 25%);
+    opacity: 90%;
+  }
+  100% {
+    transform: translate(-55%, 25%);
+    opacity: 50%;
+  }
+}
 /* INICIO DE FOOTER */
-
 .contenedor-footer-contacto {
-    display: grid;
-    grid-template-columns: 40% repeat(4, 1fr) 40%;
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
+  display: grid;
+  grid-template-columns: 40% repeat(4, 1fr) 40%;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
 
-    .div1-footer-contacto { grid-area: 1 / 1 / 2 / 2; }
-    .div2-footer-contacto { grid-area: 1 / 2 / 2 / 3; }
-    .div3-footer-contacto { grid-area: 1 / 3 / 2 / 4; }
-    .div4-footer-contacto { grid-area: 1 / 4 / 2 / 5; }
-    .div5-footer-contacto { grid-area: 1 / 5 / 2 / 6; }
-    .div6-footer-contacto { grid-area: 1 / 6 / 2 / 7; }
+.div1-footer-contacto {
+  grid-area: 1/1/2/2;
+}
+
+.div2-footer-contacto {
+  grid-area: 1/2/2/3;
+}
+
+.div3-footer-contacto {
+  grid-area: 1/3/2/4;
+}
+
+.div4-footer-contacto {
+  grid-area: 1/4/2/5;
+}
+
+.div5-footer-contacto {
+  grid-area: 1/5/2/6;
+}
+
+.div6-footer-contacto {
+  grid-area: 1/6/2/7;
+}
 
 .redes-footer-contacto {
-    width: 50px;
+  width: 50px;
 }
-@media only screen and (max-width:983px) and (min-width:700px) {
-    .redes-footer-contacto {
-        margin: 0px ;
-        width: 25px;
-    }
+
+/*Query footer contacto*/
+@media only screen and (max-width: 983px) and (min-width: 700px) {
+  .redes-footer-contacto {
+    margin: 0px;
+    width: 25px;
+  }
 }
-@media only screen and (max-width:699px) and (min-width:100px) {
-    .redes-footer-contacto {
-        margin: 0px;
-        width: 20px;
-    }
+@media only screen and (max-width: 699px) and (min-width: 100px) {
+  .redes-footer-contacto {
+    margin: 0px;
+    width: 20px;
+  }
 }
-/* --------------------------------------------FIN CONTACTO----------------------------- */
+
+/*# sourceMappingURL=style.css.map */

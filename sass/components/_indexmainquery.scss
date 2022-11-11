@@ -1,0 +1,32 @@
+/* @MEDIA DEL TITULO CON ANIMACION */
+@media only screen and (min-width: 1128px) and (max-width: 1800px) {
+    .div6,
+    .div7 {
+      font-size: 4rem;
+    }
+  }
+  @media only screen and (min-width: 894px) and (max-width: 1127px) {
+    .div6,
+    .div7 {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 456px) and (max-width: 893px) {
+    .div6,
+    .div7 {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (min-width: 228px) and (max-width: 455px) {
+    .div6,
+    .div7 {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (min-width: 100px) and (max-width: 227px) {
+    .div6,
+    .div7 {
+      font-size: 0.5rem;
+    }
+  }
+  /* Fin de main */

@@ -1,0 +1,98 @@
+@media only screen and (max-width: 560px) and (min-width: 100px) {
+    .div3-contacto {
+      margin: 10% 10%;
+    }
+    .div4-contacto {
+      margin: 30% 10%;
+    }
+  }
+
+/* MOVIMIENTO TAPA1 IZQUIERDA MENOS DE 1653 PX */
+@media only screen and (max-width: 1653px) and (min-width: 1020px) {
+    .z-tapa1,
+    .z-tapa2 {
+      width: 300px;
+    }
+  }
+  @media only screen and (max-width: 1019px) and (min-width: 984px) {
+    .z-tapa1,
+    .z-tapa2 {
+      width: 200px;
+      animation: movertapa1 5s ease-in-out infinite;
+    }
+    @keyframes movertapa1 {
+      0% {
+        transform: translate(75%, 60%);
+        opacity: 50%;
+      }
+      25% {
+        transform: translate(75%, 65%);
+        opacity: 60%;
+      }
+      50% {
+        transform: translate(75%, 70%);
+        opacity: 70%;
+      }
+      75% {
+        transform: translate(75%, 65%);
+        opacity: 80%;
+      }
+      90% {
+        transform: translate(75%, 60%);
+        opacity: 90%;
+      }
+      100% {
+        transform: translate(75%, 55%);
+        opacity: 50%;
+      }
+    }
+  }
+  @media only screen and (max-width: 983px) and (min-width: 700px) {
+    .z-tapa1,
+    .z-tapa2 {
+      width: 200px;
+    }
+  }
+  @media only screen and (max-width: 699px) and (min-width: 560px) {
+    .z-tapa1,
+    .z-tapa2 {
+      width: 100px;
+    }
+  }
+  @media only screen and (max-width: 559px) and (min-width: 0px) {
+    .z-tapa1,
+    .z-tapa2 {
+      width: 0px;
+    }
+  }
+  /* MOVIMIENTO TAPA2 DERECHA PANTALLA COMPLETA */
+  .z-tapa2 {
+    animation: movimiento 5s ease-in-out infinite;
+  }
+  
+  @keyframes movimiento {
+    0% {
+      transform: translate(-55%, 25%);
+      opacity: 50%;
+    }
+    25% {
+      transform: translate(-55%, 30%);
+      opacity: 60%;
+    }
+    50% {
+      transform: translate(-55%, 40%);
+      opacity: 70%;
+    }
+    75% {
+      transform: translate(-55%, 25%);
+      opacity: 80%;
+    }
+    90% {
+      transform: translate(-55%, 25%);
+      opacity: 90%;
+    }
+    100% {
+      transform: translate(-55%, 25%);
+      opacity: 50%;
+    }
+  }

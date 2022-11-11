@@ -1,0 +1,75 @@
+/* Inicio Main */
+.parent-main-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 25%) 1fr repeat(2, 25%);
+    grid-template-rows: repeat(5, 130px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  
+  .div1-contacto {
+    grid-area: 1/1/4/2;
+  }
+  
+  .div2-contacto {
+    grid-area: 1/2/2/3;
+  }
+  
+  .div3-contacto {
+    grid-area: 1/2/4/5;
+    margin: 0% 30%;
+  }
+  
+  .div4-contacto {
+    grid-area: 2/2/3/5;
+    margin: 5% 30%;
+  }
+  
+  
+  .div6-contacto {
+    grid-area: 1/5/5/6;
+  }
+  
+  .letraformulario {
+    font-size: 20px;
+    color: azure;
+    border-radius: 10px;
+  }
+  
+  .fondo-formulario {
+    background-color: #EDA765;
+  }
+  
+  /* MOVIMIENTO TAPA1 IZQUIERDA PANTALLA COMPLETA */
+  .z-tapa1 {
+    animation: mover 5s ease-in-out infinite;
+  }
+  
+  @keyframes mover {
+    0% {
+      transform: translate(50%, 25%);
+      opacity: 50%;
+    }
+    25% {
+      transform: translate(50%, 30%);
+      opacity: 60%;
+    }
+    50% {
+      transform: translate(50%, 40%);
+      opacity: 70%;
+    }
+    75% {
+      transform: translate(50%, 25%);
+      opacity: 80%;
+    }
+    90% {
+      transform: translate(50%, 25%);
+      opacity: 90%;
+    }
+    100% {
+      transform: translate(50%, 25%);
+      opacity: 50%;
+    }
+  }
+  
+  /* FIN DE Main */
