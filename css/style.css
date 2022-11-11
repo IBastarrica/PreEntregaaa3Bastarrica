@@ -536,7 +536,7 @@
 /* Fin main discografia */
 /* INICIO HEADER / DISCOGRAFIA / ALBUMES / SENCILLOS */
 .fondoalbumsenc {
-  background-image: url("../imagenes/fondoalbumsencillo.jpg");
+  background-image: url("./imagenes/fondoalbumsencillo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
