@@ -248,7 +248,7 @@
 /*Inicio Recitales*/
 /*Fondo recitales*/
 .fondo-recitales {
-  background-image: url("../../imagenes/fondorecitales4.jpg");
+  background-image: url("../imagenes/fondorecitales4.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -302,7 +302,7 @@
 }
 /*discografia fondo*/
 .fondo-discografia {
-  background-image: url(../images/fondodiscografia.jpg);
+  background-image: url("../imagenes/fondodiscografia.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -536,7 +536,7 @@
 /* Fin main discografia */
 /* INICIO HEADER / DISCOGRAFIA / ALBUMES / SENCILLOS */
 .fondoalbumsenc {
-  background-image: url(/images/fondoalbumsencillo.jpg);
+  background-image: url("../imagenes/fondoalbumsencillo.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -545,7 +545,7 @@
 
 /* Inicio archivos con tapa musical & iframe */
 .fondotapa {
-  background-image: url(/images/fondoiframe2.jpg);
+  background-image: url("../imagenes/fondoiframe2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -568,7 +568,7 @@
 
 /* Fondo historia */
 .fondo-historia {
-  background-image: url("../../imagenes/fondo11.jpg");
+  background-image: url("../imagenes/fondo11.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: 100% 100%;
@@ -613,7 +613,7 @@
 /* Fin / Main / Historia */
 /*contacto fondo */
 .fondo-contacto {
-  background-image: url(/images/fondo9.jpg);
+  background-image: url("../imagenes/fondo9.jpg");
   background-repeat: repeat;
   background-size: cover;
   background-position: 100% 100%;
