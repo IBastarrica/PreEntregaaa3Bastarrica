@@ -55,7 +55,7 @@
   }
 }
 /* Main / Section / Div */
-body {
+.fondoindexnuevo {
   min-height: 100vh;
   display: flex;
   justify-content: center;
