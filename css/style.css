@@ -9,12 +9,15 @@
   font-family: "Fuzzy Bubbles";
 }
 
+/*.fondo-index {
+    background-image: url("../imagenes/fondoproyecto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+  }*/
 .fondo-index {
-  background-image: url("../imagenes/fondoproyecto.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
+  background: -webkit-radial-gradient(#560e86, #0a0011);
 }
 
 /*Header - Menu*/
