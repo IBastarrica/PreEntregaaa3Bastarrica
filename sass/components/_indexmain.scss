@@ -26,8 +26,8 @@
 .contenedor span::after {
   content: var(--l);
   position: absolute;
-  height: 200%;
-  width: 300px;
+  height: 50%;
+  width: 100px;
   top: 80%;
   left: 0;
   filter: blur(30px);
