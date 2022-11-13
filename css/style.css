@@ -10,7 +10,7 @@
 }
 
 .fondoindexmain {
-  background-image: url("../imagenes/fondoindex2.jpg");
+  background-image: url("../imagenes/imagenfondoindex2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -18,7 +18,7 @@
 }
 
 .fondoindexfooter {
-  background-image: url("../imagenes/fondoindex1.jpg");
+  background-image: url("../imagenes/imagenfondoindex1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
