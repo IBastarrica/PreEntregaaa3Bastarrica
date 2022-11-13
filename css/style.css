@@ -9,6 +9,14 @@
   font-family: "Fuzzy Bubbles";
 }
 
+.fondofondo {
+  background-image: radial-gradient(violet, blue);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 /*Header - Menu*/
 .color-nav {
   background-color: #ABD9FF;
