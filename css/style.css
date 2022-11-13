@@ -9,8 +9,16 @@
   font-family: "Bebas Neue", cursive;
 }
 
-.fondofondo {
-  background-image: radial-gradient(violet, red, blue);
+.fondoindexmain {
+  background-image: url("../imagenes/fondoindex2");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fondoindexfooter {
+  background-image: url("../imagenes/fondoindex1");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
