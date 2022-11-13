@@ -1,9 +1,10 @@
 .fondoindexmain {
-  background-image: url("../imagenes/imagenindexfondo2.jpg");
+  background-image: url("../imagenes/imagenindex2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  z-index: -2;
 }
 .fondoindexfooter {
   background-image: url("../imagenes/imagenindexfondo1.jpg");
