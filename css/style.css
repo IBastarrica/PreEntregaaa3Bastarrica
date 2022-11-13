@@ -10,7 +10,7 @@
 }
 
 .fondoindexmain {
-  background-image: url("../imagenes/imagenfondoindex2.jpg");
+  background-image: url("../imagenes/imagenindexfondo2.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -18,7 +18,7 @@
 }
 
 .fondoindexfooter {
-  background-image: url("../imagenes/imagenfondoindex1.jpg");
+  background-image: url("../imagenes/imagenindexfondo1.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -39,16 +39,16 @@
 /* Fin header */
 /* @MEDIA DEL FONDO DE PANTALLA */
 @media only screen and (min-width: 1595px) and (max-width: 1716px) {
-  .fondo-index {
-    background-image: url("../imagenes/fondoproyecto.jpg");
+  .fondoindexmain {
+    background-image: url("../imagenes/imagenindexfondo2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 70% 40%;
   }
 }
 @media only screen and (min-width: 1722px) {
-  .fondo-index {
-    background-image: url("../imagenes/fondoproyecto.jpg");
+  .fondoindexmain {
+    background-image: url("../imagenes/imagenindexfondo2.jpg");
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: cover;
@@ -56,8 +56,8 @@
   }
 }
 @media only screen and (min-width: 2px) and (max-width: 1009px) {
-  .fondo-index {
-    background-image: url("../imagenes/fondo5.jpg");
+  .fondoindexmain {
+    background-image: url("../imagenes/imagenindexfondo2.jpg");
     background-size: cover;
   }
 }
