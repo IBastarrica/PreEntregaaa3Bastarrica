@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1223px) and (min-width: 0px){
+    .div2-footer-index {
+        grid-area: 1/5/2/6;
+      }
+      
+      .div3-footer-index {
+        grid-area: 2/5/3/6;
+      }
+      
+      .div4-footer-index {
+        grid-area: 3/5/4/6;
+      }
+      
+      .div5-footer-index {
+        grid-area: 4/5/5/6;
+      }
+      .redes-footer-index {
+        width: 60px;
+      }
+      .div6-footer-index {
+        grid-area: 5/1/7/6;
+      }
+}
+@media only screen and (max-width: 434px) and (min-width: 0px){
+    .redes-footer-index {
+        width: 30px;
+      }
+      .div2-footer-index {
+        grid-area: 2/5/3/6;
+      }
+      
+      .div3-footer-index {
+        grid-area: 3/5/4/6;
+      }
+      
+      .div4-footer-index {
+        grid-area: 5/5/6/6;
+      }
+      
+      .div5-footer-index {
+        grid-area: 4/5/5/6;
+      }
+      .div6-footer-index {
+        grid-area: 6/1/7/6;
+      }
+      .sinfines,
+      .firma{
+        font-size: 100%;
+      }
+      
+}

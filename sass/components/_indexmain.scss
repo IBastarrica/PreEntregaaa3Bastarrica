@@ -1,16 +1,120 @@
 /* Main / Section / Div */
 
-.parent {
+.contenedor-main-index {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: 25% 20% 10% 20% 25%;
+  grid-template-rows: repeat(5, 200px);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+}
+
+.mainizquierda {
+  grid-area: 1/1/6/2;
+}
+
+.maincentro {
+  grid-area: 3/3/4/4;
+}
+
+.mainderecha {
+  grid-area: 1/5/6/6;
+}
+
+.mainabajo {
+  grid-area: 5/2/6/5;
+}
   
+.tamañologo{
+  width: 100%;
+  border-radius: 50%;
+  animation: moverlogo1 5s ease-in-out infinite;
+}
+
+@keyframes moverlogo1 {
+  0% {
+    transform: scale(3);
+    opacity: 70%;
+  }
+  15%{
+    transform: scale(2.8);
+    opacity: 75%;
+  }
+  30%{
+    transform: scale(2.6);
+    opacity: 80%;
+  }
+  40%{
+    transform: scale(2.4);
+    opacity: 85%;
+  }
+  50%{
+    transform: scale(2.2);
+    opacity: 90%;
+  }
+  55% {
+    transform: scale(2);
+    opacity: 95%;
+  }
+  65% {
+    transform: scale(2.2);
+    opacity: 100%;
+  }
+  75% {
+    transform: scale(2.4);
+    opacity: 100%;
+  }
+  85% {
+    transform: scale(2.8);
+    opacity: 100%;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 100%;
   }
   
-  .div1 { grid-area: 4 / 1 / 6 / 6; }
-  .div2 { grid-area: 1 / 2 / 4 / 5; }
-  .div3 { grid-area: 1 / 1 / 4 / 2; }
-  .div4 { grid-area: 1 / 5 / 4 / 6; }
+}
+.hipervinculonuevotema{
+  text-decoration: none;
+}
+.nuevotema{
+  font-family: 'Tourney', cursive;
+  font-size: 300%;
+  padding: 25%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  
+}
+.temanuevoanimacion{
+  width: 100%;
+  border-radius: 20%;
+  animation: temanuevo 3s ease-in-out infinite;
+}
+@keyframes temanuevo {
+  0% {
+    transform: translateY(-20%);
+  }
+  25% {
+    transform: translateY(-15%);
+  }
+  50% {
+    transform: translateY(-10%);
+  }
+  75% {
+    transform: translateY(-15%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
 
+.tituloderecha{
+  color: white;
+  margin: 30% 10% 10%;
+}
+.parrafoderecha{
+  color: white;
+  margin: 0% 20%;
+  font-size: x-large;
+}

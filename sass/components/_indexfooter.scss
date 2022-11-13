@@ -2,40 +2,55 @@
 
 .contenedor-footer-index {
   display: grid;
-  grid-template-columns: 40% repeat(4, 1fr) 40%;
+  grid-template-columns: 20% 20% repeat(4, 5%) 40%;
   grid-template-rows: repeat(5, 150px);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
-.div1-footer-contacto {
-  grid-area: 1/1/2/2;
+.div1-footer-index {
+  grid-area: 5/1/6/2;
 }
 
 .div2-footer-index {
-  grid-area: 4/2/5/3;
-}
-
-.div3-footer-index {
   grid-area: 4/3/5/4;
 }
 
-.div4-footer-index {
+.div3-footer-index {
   grid-area: 4/4/5/5;
 }
 
-.div5-footer-index {
+.div4-footer-index {
   grid-area: 4/5/5/6;
 }
 
-.div6-footer-contacto {
-  grid-area: 1/6/2/7;
+.div5-footer-index {
+  grid-area: 4/6/5/7;
 }
 
-.redes-footer-contacto {
+.div6-footer-index {
+  grid-area: 5/1/6/2;
+}
+
+.redes-footer-index {
   width: 50px;
 }
 
+.sinfines{
+  font-family: 'Dancing Script', cursive;
+  color: #FECD70;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+}
+
+.firma{
+  font-family: 'Dancing Script', cursive;
+  color: #FECD70;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+}
   
   
   /* Fin Footer*/

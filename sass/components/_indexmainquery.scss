@@ -1,32 +1,20 @@
 /* @MEDIA DEL TITULO CON ANIMACION */
-@media only screen and (min-width: 1128px) and (max-width: 1800px) {
-    .div6,
-    .div7 {
-      font-size: 4rem;
-    }
+@media only screen and (max-width: 712px) and (min-width: 0px){
+  .nuevotema {
+    font-size: 0%;
   }
-  @media only screen and (min-width: 894px) and (max-width: 1127px) {
-    .div6,
-    .div7 {
-      font-size: 2rem;
-    }
+  .temanuevoanimacion {
+    width: 0%;
   }
-  @media only screen and (min-width: 456px) and (max-width: 893px) {
-    .div6,
-    .div7 {
-      font-size: 2rem;
-    }
   }
-  @media only screen and (min-width: 228px) and (max-width: 455px) {
-    .div6,
-    .div7 {
-      font-size: 1rem;
+  @media only screen and (max-width: 1266px) and (min-width: 0px){
+    .mainderecha{
+      grid-area: 2/1/3/6;
     }
-  }
-  @media only screen and (min-width: 100px) and (max-width: 227px) {
-    .div6,
-    .div7 {
-      font-size: 0.5rem;
+    @media only screen and (max-width: 790px) and (min-width: 0px){
+      .maincentro {
+        grid-area: 2/3/3/4;
+      }
     }
   }
   /* Fin de main */
