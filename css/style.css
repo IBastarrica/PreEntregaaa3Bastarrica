@@ -61,7 +61,32 @@
     background-size: cover;
   }
 }
-/* Main / Section / Div */ /* @MEDIA DEL TITULO CON ANIMACION */
+/* Main / Section / Div */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 4/1/6/6;
+}
+
+.div2 {
+  grid-area: 1/2/4/5;
+}
+
+.div3 {
+  grid-area: 1/1/4/2;
+}
+
+.div4 {
+  grid-area: 1/5/4/6;
+}
+
+/* @MEDIA DEL TITULO CON ANIMACION */
 @media only screen and (min-width: 1128px) and (max-width: 1800px) {
   .div6,
   .div7 {
@@ -97,7 +122,7 @@
 .index-footer-contenedor {
   display: grid;
   grid-template-columns: repeat(4, 1fr) 80%;
-  grid-template-rows: repeat(5, 30px);
+  grid-template-rows: repeat(10, 30px);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
