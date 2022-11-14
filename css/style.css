@@ -30,10 +30,6 @@
 }
 
 /*Header - Menu*/
-.color-nav {
-  background-color: white;
-}
-
 .animacion-header:hover {
   transform: scale(1.2);
   transition: all 1s;
@@ -188,6 +184,7 @@
   grid-template-rows: repeat(5, 150px);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  border: 3px solid black;
 }
 
 .div1-footer-index {
@@ -343,13 +340,6 @@
   background-size: cover;
 }
 
-/* Inicio header Discografia */
-.color-header-discografia {
-  background-color: #D7CCC9;
-  border-radius: 15px;
-}
-
-/* Fin header Discografia */
 /* Inicio main Discografia */
 section div div img {
   border: 3px solid white;
@@ -363,7 +353,6 @@ section div div img {
 }
 
 .esteticacarta2 {
-  color: black;
   background-color: #D98F89;
   font-family: "Bebas Neue", cursive;
   border: 3px groove white;
@@ -408,33 +397,19 @@ section div div img {
   background-repeat: repeat;
   background-size: cover;
   background-position: 100% 100%;
+  border: 2px solid black;
 }
 
-/* INICIO  Header / Historia */
-.color-header-historia {
-  background-color: #BC8851;
-  border-radius: 15px;
-}
-
-/* FIN Header / Historia */
 /* Inicio Main / Historia */
 /* Section 1 */
-.section1-main-historia {
-  font-size: 30px;
-  color: #BC8851;
-  font-style: italic;
-}
-
-/* Section 2 */
-.section2-main-historia {
+section div div p {
   font-size: 27px;
-  color: #BC8851;
+  color: white;
   font-style: italic;
 }
 
-.carrousel-main-historia {
-  border-radius: 15px;
-  border: 2px solid #68645C;
+section div div h2 {
+  color: white;
 }
 
 .margen-carrousel {
