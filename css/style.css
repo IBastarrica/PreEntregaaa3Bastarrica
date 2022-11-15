@@ -157,26 +157,6 @@
   font-size: x-large;
 }
 
-/* @MEDIA DEL TITULO CON ANIMACION */
-@media only screen and (max-width: 712px) and (min-width: 0px) {
-  .nuevotema {
-    font-size: 0%;
-  }
-  .temanuevoanimacion {
-    width: 0%;
-  }
-}
-@media only screen and (max-width: 1266px) and (min-width: 0px) {
-  .mainderecha {
-    grid-area: 2/1/3/6;
-  }
-}
-@media only screen and (max-width: 1266px) and (min-width: 0px) and (max-width: 790px) and (min-width: 0px) {
-  .maincentro {
-    grid-area: 2/3/3/4;
-  }
-}
-/* Fin de main */
 /* Inicio de footer */
 .contenedor-footer-index {
   display: grid;
