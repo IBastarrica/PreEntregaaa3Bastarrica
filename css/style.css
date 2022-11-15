@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*Reset de valores*/
-@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Trispace:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
@@ -303,13 +302,13 @@ section div div img {
 .esteticacarta1 {
   color: black;
   background-color: #82CBC2;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Trispace", sans-serif;
   border: 3px groove white;
 }
 
 .esteticacarta2 {
   background-color: #D98F89;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Trispace", sans-serif;
   border: 3px groove white;
 }
 
