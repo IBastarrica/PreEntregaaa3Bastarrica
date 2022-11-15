@@ -1,15 +1,18 @@
 /* Inicio Main / Historia */
 /* Section 1 */
-
-  section div div p{
-    font-size: 27px;
+  .tituloh1{
+    display: flex;
+    justify-content: center;
+    font-family: "Trispace", sans-serif;
+    color: white;
+    font-style:italic;
+  }
+  .p1{
+    font-size: 30px;
     color: white;
     font-style: italic;
   }
-  section div div h2{
-    color: white;
-  }
-
+  
   .margen-carrousel {
     margin: 62px 5px;
   }
