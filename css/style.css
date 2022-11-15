@@ -352,18 +352,10 @@ section div div img {
   background-size: cover;
 }
 
-/* Inicio Header */
-.color-nav-iframe {
-  background-color: #1C1714;
-  border-radius: 15px;
-}
-
-/* Fin Header */
 /*Titulo tapa musical*/
 .fuentetitulo {
-  color: #1C8642;
+  color: green;
   font-family: "Akaya Telivigala", cursive;
-  border-radius: 15px;
 }
 
 /* Fondo historia */
@@ -405,13 +397,6 @@ section div div h2 {
   background-position: 100% 100%;
 }
 
-/* Inicio Header */
-.color-header-contacto {
-  background-color: #E07C29;
-  border-radius: 15px;
-}
-
-/* Fin Header */
 /* Inicio Main */
 .parent-main-contacto {
   display: grid;
@@ -445,12 +430,8 @@ section div div h2 {
 
 .letraformulario {
   font-size: 20px;
-  color: azure;
+  color: white;
   border-radius: 10px;
-}
-
-.fondo-formulario {
-  background-color: #EDA765;
 }
 
 /* MOVIMIENTO TAPA1 IZQUIERDA PANTALLA COMPLETA */
