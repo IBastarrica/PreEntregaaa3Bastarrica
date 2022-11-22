@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Trispace:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Tourney:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -194,7 +193,6 @@
 }
 
 .sinfines {
-  font-family: "Dancing Script", cursive;
   color: white;
   font-size: 150%;
   display: flex;
@@ -202,7 +200,6 @@
 }
 
 .firma {
-  font-family: "Dancing Script", cursive;
   color: white;
   font-size: 150%;
   display: flex;
